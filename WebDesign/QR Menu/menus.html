@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator | Code Architects</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <input type="text" id="text" placeholder="Enter text.." class="input" />
+        <div class="opt_inputs_container">
+            <input type="number" id="width" placeholder="width (optional)" class="input opt_input" />
+            <input type="number" id="height" placeholder="height (optional)" class="input opt_input" />
+        </div>
+        <button type="button" onclick="generateQR()">Generate QR</button>
+        <div id="qr-image"><span class="error"></span><br/><img src="" id="img" /></div>
+        <p class="creator"> <a href="https://github.com/hakanyucelten" target="_blank">GitHub</a></p>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
